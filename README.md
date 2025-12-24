@@ -1,7 +1,7 @@
 # CoEngineers: Claude Code in 20 Labs
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/johngordon/coengineers-course/releases)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/highlandhodl/coengineers-course/releases)
 
 From messy inputs to polished outputs. No coding required.
 
