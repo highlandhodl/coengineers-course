@@ -1,0 +1,609 @@
+{
+  "$schema": "https://coursekit.local/schemas/course-structure.json",
+  "version": "0.1.0",
+  "lastUpdated": "2025-12-24",
+  "status": "validated",
+  "courseId": "coengineers-claude-code-20-labs",
+  "title": "CoEngineers: Claude Code in 20 Labs",
+  "tagline": "From messy inputs to polished outputs. No coding required.",
+  "labPrefix": "CC",
+  "targetAudience": {
+    "primaryRoles": [
+      "Product Managers",
+      "Content Creators",
+      "Knowledge Workers",
+      "Small Business Owners",
+      "Non-Technical Professionals"
+    ],
+    "experienceLevel": "Beginner (no coding experience required)",
+    "prerequisites": [
+      "Mac or Windows computer",
+      "Internet connection",
+      "~50 minutes per lab",
+      "Willingness to experiment"
+    ],
+    "technicalComfort": "Low - intimidated by terminal/developer tools",
+    "motivation": "Increase productivity, organise chaos, produce professional outputs"
+  },
+  "learningObjectives": [
+    "Communicate naturally with Claude Code to accomplish tasks without coding",
+    "Organise a knowledge vault using PARA methodology with templates and metadata",
+    "Process unstructured content (Word, PowerPoint, Excel, video, images) into structured knowledge",
+    "Create professional business materials (brand kits, proposals, forecasts, SOWs) using Claude Code skills",
+    "Integrate external AI services (image generation, presentations, audio, video, social media) via MCP servers",
+    "Build reusable slash commands that automate repetitive workflows"
+  ],
+  "constraints": {
+    "totalDuration": "17 hours",
+    "labDuration": 50,
+    "format": "Self-paced, 20% documentation / 80% Claude Code interactive",
+    "launchDate": "2026-01-05"
+  },
+  "caseStudy": {
+    "company": "GrowthPath",
+    "industry": "Consultancy / Professional Services",
+    "scenario": "Early-stage Scottish startup drowning in document chaos, transforming to AI-powered efficiency",
+    "storyArc": "Chaos → Foundation → Processed → Professional → Automated",
+    "documents": {
+      "definition": "case-study/definition.md",
+      "companyProfile": "case-study/company-profile.md",
+      "personas": [
+        "case-study/personas/hodl-mcdougall.md",
+        "case-study/personas/flora-mccombie.md",
+        "case-study/personas/angus-chalmers.md",
+        "case-study/personas/isla-murray.md"
+      ],
+      "moduleContexts": [
+        "case-study/context/module-1-context.md",
+        "case-study/context/module-2-context.md",
+        "case-study/context/module-3-context.md",
+        "case-study/context/module-4-context.md"
+      ]
+    }
+  },
+  "modules": [
+    {
+      "id": "0",
+      "name": "Getting Started",
+      "description": "Introduction to the course, prerequisites, installation, and quick reference",
+      "contextFile": null,
+      "labs": []
+    },
+    {
+      "id": "1",
+      "name": "Building Knowledge Vaults",
+      "description": "Transform from chaos to foundation - create organised knowledge systems with PARA methodology",
+      "contextFile": "case-study/context/module-1-context.md",
+      "labs": [
+        {
+          "id": "1.1",
+          "title": "First Conversation",
+          "slug": "first-conversation",
+          "command": "CC.m1.lb1",
+          "description": "Confidence-building first interaction with Claude Code",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m1.lb1-plan.md",
+          "primaryPersona": "hodl-mcdougall",
+          "inputs": [],
+          "outputs": [
+            {
+              "name": "First Interaction Complete",
+              "filename": null,
+              "description": "Learner has successfully conversed with Claude Code",
+              "type": "milestone"
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "title": "PARA Structure",
+          "slug": "para-structure",
+          "command": "CC.m1.lb2",
+          "description": "Create 5-folder vault with Projects, Areas, Resources, Archives",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m1.lb2-plan.md",
+          "primaryPersona": "flora-mccombie",
+          "inputs": [],
+          "outputs": [
+            {
+              "name": "PARA Vault",
+              "filename": "knowledge-vault/",
+              "description": "5-folder structure with READMEs",
+              "type": "directory"
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "title": "Folder Architectures",
+          "slug": "folder-architectures",
+          "command": "CC.m1.lb3",
+          "description": "Specialised project structures for different work types",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m1.lb3-plan.md",
+          "primaryPersona": "flora-mccombie",
+          "inputs": [],
+          "outputs": [
+            {
+              "name": "Project Templates",
+              "filename": "knowledge-vault/Resources/templates/",
+              "description": "Specialised folder structures",
+              "type": "directory"
+            }
+          ]
+        },
+        {
+          "id": "1.4",
+          "title": "Document Templates",
+          "slug": "document-templates",
+          "command": "CC.m1.lb4",
+          "description": "10+ reusable templates for recurring content needs",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m1.lb4-plan.md",
+          "primaryPersona": "flora-mccombie",
+          "inputs": [],
+          "outputs": [
+            {
+              "name": "Template Library",
+              "filename": "knowledge-vault/Resources/templates/",
+              "description": "10+ reusable document templates",
+              "type": "directory"
+            }
+          ]
+        },
+        {
+          "id": "1.5",
+          "title": "Metadata Enrichment",
+          "slug": "metadata-enrichment",
+          "command": "CC.m1.lb5",
+          "description": "YAML frontmatter system with consistent tagging",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m1.lb5-plan.md",
+          "primaryPersona": "flora-mccombie",
+          "inputs": [],
+          "outputs": [
+            {
+              "name": "Metadata System",
+              "filename": "knowledge-vault/",
+              "description": "Files with YAML frontmatter and tagging",
+              "type": "directory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Processing Data",
+      "description": "Transform raw content into processed knowledge - Word, PowerPoint, Excel, transcripts, images",
+      "contextFile": "case-study/context/module-2-context.md",
+      "labs": [
+        {
+          "id": "2.1",
+          "title": "Word Documents",
+          "slug": "word-documents",
+          "command": "CC.m2.lb1",
+          "description": "Extract and convert DOCX to clean markdown",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m2.lb1-plan.md",
+          "primaryPersona": "angus-chalmers",
+          "inputs": [
+            {
+              "name": "Early Customer Notes",
+              "filename": "early-customer-notes.docx",
+              "description": "Messy Word doc with typos, formatting issues",
+              "type": "input"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Processed Notes",
+              "filename": "customer-notes.md",
+              "description": "Clean markdown with metadata",
+              "type": "output"
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "title": "PowerPoints",
+          "slug": "powerpoints",
+          "command": "CC.m2.lb2",
+          "description": "Process PPTX to structured content",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m2.lb2-plan.md",
+          "primaryPersona": "angus-chalmers",
+          "inputs": [
+            {
+              "name": "First Pitch Deck",
+              "filename": "first-pitch-deck.pptx",
+              "description": "Original investor presentation",
+              "type": "input"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Pitch Deck Content",
+              "filename": "pitch-deck-content.md",
+              "description": "Structured content extraction",
+              "type": "output"
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "title": "Excel",
+          "slug": "excel",
+          "command": "CC.m2.lb3",
+          "description": "Generate narrative insights from spreadsheet data",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m2.lb3-plan.md",
+          "primaryPersona": "angus-chalmers",
+          "inputs": [
+            {
+              "name": "Customer Pipeline",
+              "filename": "customer-pipeline.xlsx",
+              "description": "Sales tracking spreadsheet",
+              "type": "input"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Pipeline Insights",
+              "filename": "pipeline-insights.md",
+              "description": "Narrative insights document",
+              "type": "output"
+            }
+          ]
+        },
+        {
+          "id": "2.4",
+          "title": "Video Transcripts",
+          "slug": "video-transcripts",
+          "command": "CC.m2.lb4",
+          "description": "Actionable summaries from meeting transcripts",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m2.lb4-plan.md",
+          "primaryPersona": "angus-chalmers",
+          "inputs": [
+            {
+              "name": "Customer Discovery Call",
+              "filename": "customer-discovery-call.md",
+              "description": "Raw transcript with um/ah",
+              "type": "input"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Meeting Summary",
+              "filename": "discovery-call-summary.md",
+              "description": "Actionable summary with action items",
+              "type": "output"
+            }
+          ]
+        },
+        {
+          "id": "2.5",
+          "title": "Image Processing",
+          "slug": "image-processing",
+          "command": "CC.m2.lb5",
+          "description": "Extract text and insights from visual content",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m2.lb5-plan.md",
+          "primaryPersona": "angus-chalmers",
+          "inputs": [
+            {
+              "name": "Whiteboard Strategy",
+              "filename": "whiteboard-strategy.png",
+              "description": "Photographed whiteboard",
+              "type": "input"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Strategy Notes",
+              "filename": "whiteboard-notes.md",
+              "description": "Extracted text and structured notes",
+              "type": "output"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Skills",
+      "description": "Create professional business materials - brand kits, proposals, forecasts, business plans, SOWs",
+      "contextFile": "case-study/context/module-3-context.md",
+      "labs": [
+        {
+          "id": "3.1",
+          "title": "Brand Asset Generator",
+          "slug": "brand-asset-generator",
+          "command": "CC.m3.lb1",
+          "description": "Complete brand kit skill with colours, typography, guidelines",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m3.lb1-plan.md",
+          "primaryPersona": "isla-murray",
+          "inputs": [
+            {
+              "name": "Company Brief",
+              "filename": "launchpad-company-brief.md",
+              "description": "Company context for brand kit",
+              "type": "input"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Brand Kit",
+              "filename": "brandkit.md",
+              "description": "Complete brand guidelines document",
+              "type": "output"
+            },
+            {
+              "name": "Apply Brand Skill",
+              "filename": ".claude/commands/apply-brand.md",
+              "description": "Reusable brand application skill",
+              "type": "output"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "title": "Proposal PowerPoint",
+          "slug": "proposal-powerpoint",
+          "command": "CC.m3.lb2",
+          "description": "Professional investor-ready PPTX presentation",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m3.lb2-plan.md",
+          "primaryPersona": "isla-murray",
+          "inputs": [
+            {
+              "name": "Customer Brief",
+              "filename": "dataflow-customer-brief.md",
+              "description": "Requirements for proposal",
+              "type": "input"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Proposal Deck",
+              "filename": "proposal.pptx",
+              "description": "Professional PPTX presentation",
+              "type": "output"
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "title": "Financial Forecast",
+          "slug": "financial-forecast",
+          "command": "CC.m3.lb3",
+          "description": "24-month financial model with projections",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m3.lb3-plan.md",
+          "primaryPersona": "hodl-mcdougall",
+          "inputs": [
+            {
+              "name": "Financial Assumptions",
+              "filename": "financial-assumptions.md",
+              "description": "Revenue model inputs",
+              "type": "input"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Financial Model",
+              "filename": "financial-forecast.xlsx",
+              "description": "24-month XLSX model",
+              "type": "output"
+            }
+          ]
+        },
+        {
+          "id": "3.4",
+          "title": "Business Plan Document",
+          "slug": "business-plan",
+          "command": "CC.m3.lb4",
+          "description": "Investor-ready DOCX business plan",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m3.lb4-plan.md",
+          "primaryPersona": "hodl-mcdougall",
+          "inputs": [
+            {
+              "name": "Business Context",
+              "filename": "business-context.md",
+              "description": "Strategic overview",
+              "type": "input"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Business Plan",
+              "filename": "business-plan.docx",
+              "description": "Investor-ready DOCX",
+              "type": "output"
+            }
+          ]
+        },
+        {
+          "id": "3.5",
+          "title": "Statement of Work",
+          "slug": "statement-of-work",
+          "command": "CC.m3.lb5",
+          "description": "Enterprise-grade SOW for client engagements",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m3.lb5-plan.md",
+          "primaryPersona": "hodl-mcdougall",
+          "inputs": [
+            {
+              "name": "SOW Requirements",
+              "filename": "dataflow-sow-requirements.md",
+              "description": "Client requirements",
+              "type": "input"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Statement of Work",
+              "filename": "statement-of-work.docx",
+              "description": "Enterprise SOW DOCX",
+              "type": "output"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "MCP & APIs",
+      "description": "Scale output with external AI services - image generation, presentations, audio, video, social media",
+      "contextFile": "case-study/context/module-4-context.md",
+      "labs": [
+        {
+          "id": "4.1",
+          "title": "Nano Banana Pro",
+          "slug": "nano-banana-pro",
+          "command": "CC.m4.lb1",
+          "description": "AI-generated brand imagery and visual assets",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m4.lb1-plan.md",
+          "primaryPersona": "isla-murray",
+          "inputs": [
+            {
+              "name": "Image Prompts",
+              "filename": "image-prompts.md",
+              "description": "Brand image prompt templates",
+              "type": "input"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Brand Imagery",
+              "filename": "brand-images/",
+              "description": "Brand imagery set (PNG files)",
+              "type": "directory"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "title": "Gamma Presentations",
+          "slug": "gamma-presentations",
+          "command": "CC.m4.lb2",
+          "description": "Rich, interactive presentations with advanced layouts",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m4.lb2-plan.md",
+          "primaryPersona": "isla-murray",
+          "inputs": [
+            {
+              "name": "Presentation Brief",
+              "filename": "presentation-brief.md",
+              "description": "Content for Gamma",
+              "type": "input"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Gamma Presentation",
+              "filename": null,
+              "description": "Interactive presentation (URL or export)",
+              "type": "external"
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "title": "ElevenLabs Audio",
+          "slug": "elevenlabs-audio",
+          "command": "CC.m4.lb3",
+          "description": "Professional audio content with synthesised voice",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m4.lb3-plan.md",
+          "primaryPersona": "isla-murray",
+          "inputs": [
+            {
+              "name": "Podcast Script",
+              "filename": "podcast-script.md",
+              "description": "Audio content script",
+              "type": "input"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Audio Content",
+              "filename": "podcast.mp3",
+              "description": "Professional audio (MP3)",
+              "type": "output"
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "title": "HeyGen Avatars",
+          "slug": "heygen-avatars",
+          "command": "CC.m4.lb4",
+          "description": "AI-powered video content with digital presenters",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m4.lb4-plan.md",
+          "primaryPersona": "isla-murray",
+          "inputs": [
+            {
+              "name": "Video Script",
+              "filename": "video-script.md",
+              "description": "Avatar video script",
+              "type": "input"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Avatar Video",
+              "filename": "avatar-video.mp4",
+              "description": "AI presenter video (MP4)",
+              "type": "output"
+            }
+          ]
+        },
+        {
+          "id": "4.5",
+          "title": "Canva Social",
+          "slug": "canva-social",
+          "command": "CC.m4.lb5",
+          "description": "Complete campaign assets across multiple platforms",
+          "estimatedMinutes": 50,
+          "planFile": "design/topic-plans/m4.lb5-plan.md",
+          "primaryPersona": "isla-murray",
+          "inputs": [
+            {
+              "name": "Campaign Brief",
+              "filename": "campaign-brief.md",
+              "description": "Social media requirements",
+              "type": "input"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Social Assets",
+              "filename": "social-assets/",
+              "description": "Multi-platform campaign assets",
+              "type": "directory"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "gaps": {
+    "critical": [],
+    "important": [
+      "What is the update/maintenance frequency for the course content?",
+      "Are there specific accessibility requirements to consider?",
+      "What happens if external APIs change their free tier limits?"
+    ],
+    "optional": [
+      "Will there be a community forum or support channel for learners?",
+      "Are there plans for localisation to other languages?",
+      "What analytics/tracking will be implemented for learning progress?"
+    ]
+  }
+}

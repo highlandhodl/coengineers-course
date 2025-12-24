@@ -1,0 +1,27 @@
+meeting notes - dataflow catch up 15 jan
+
+on call: hodl, flora, someone from dataflow (sarah i think?), maybe angus joined late
+
+talked about onboarding timeline - they want to start properly by end of month
+sarah mentioned their current system is a mess (spreadsheets everywhere, no single source)
+sounds familiar lol
+
+need to send them the proposal by friday - WHICH VERSION THO??
+flora said she'd find it
+
+action items:
+- proposal to dataflow (flora? or hodl?)
+- schedule kickoff meeting for week of 27th
+- angus to look at their data situation
+
+they asked about our rates again. hodl said we'd confirm in proposal
+
+oh also sarah mentioned they might want help with board reporting later
+could be good follow on work
+
+flora suggested we do discovery sessions first before jumping into solutions
+hodl agreed (surprisingly)
+
+next call: sometime next week, sarah to send invite
+
+TODO: find the actual proposal template we used for cairngorm - that one was good

@@ -1,0 +1,46 @@
+# Meeting Summary: DataFlow Catch-up
+**Date:** 15 January
+
+---
+
+## Attendees
+- Hodl McDougall (GrowthPath)
+- Flora McCombie (GrowthPath)
+- Sarah (DataFlow)
+- Angus Chalmers (GrowthPath) - joined late
+
+---
+
+## Key Discussion Points
+
+### Onboarding Timeline
+- DataFlow wants to start properly by end of month
+- Their current system is disorganised (spreadsheets everywhere, no single source of truth)
+
+### Proposal & Rates
+- Proposal needed by Friday
+- Rates to be confirmed in proposal
+- Reference: Cairngorm proposal template worked well
+
+### Approach
+- Flora suggested discovery sessions before jumping into solutions
+- Hodl agreed to this approach
+
+### Future Opportunities
+- DataFlow may want help with board reporting later (potential follow-on work)
+
+---
+
+## Action Items
+
+| Action | Owner | Deadline |
+|--------|-------|----------|
+| Send proposal to DataFlow | Flora / Hodl (TBC) | Friday |
+| Schedule kickoff meeting | Sarah (DataFlow) | Week of 27th |
+| Review DataFlow's data situation | Angus | Before kickoff |
+| Find Cairngorm proposal template | Flora | Before Friday |
+
+---
+
+## Next Steps
+- Sarah to send invite for next week's call

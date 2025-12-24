@@ -1,0 +1,18 @@
+Welcome to Claude Code!
+
+If you're reading this, you've just taken your first step into a more organised future.
+
+This is a simple text file, sitting in your lab folder, waiting to be discovered. The fact that you found it - whether by asking Claude to list files or to read this note - means you're already getting the hang of things.
+
+Here's what you should know:
+- Claude Code understands plain English. No special commands needed.
+- You can ask Claude to read, create, organise, and transform files.
+- Claude always asks before making changes. You're in control.
+
+The document chaos ends here. One conversation at a time.
+
+Now, go create something!
+
+---
+GrowthPath Consulting
+"The honey badger doesnae give up"
