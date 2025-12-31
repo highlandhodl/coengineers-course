@@ -17,6 +17,7 @@ This course package contains everything you need to learn Claude Code - from mes
 - Mac or Windows computer
 - Internet connection
 - ~50 minutes per lab
+- For Module 4: External API keys (see [API_SETUP.md](API_SETUP.md))
 
 ### Step 2: Setup
 1. Extract this zip file (if zipped)
